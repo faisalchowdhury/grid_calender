@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Grid</title>
+
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            grid-template-rows: repeat(3 , 1fr) 50px 50px;
+        }
+        .item {
+            background-color: brown;
+            color: aliceblue;
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        #box1 {
+            grid-row: span 5;
+        }
+        #box11 , #box12 {
+            grid-column: span 3;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="item" id="box1">Item- 1</div>
+        <div class="item" id="box2">Item- 2</div>
+        <div class="item" id="box3">Item- 3</div>
+        <div class="item" id="box4">Item- 4</div>
+        <div class="item" id="box5">Item- 5</div>
+        <div class="item" id="box6">Item- 6</div>
+        <div class="item" id="box7">Item- 7</div>
+        <div class="item" id="box8">Item- 8</div>
+        <div class="item" id="box9">Item- 9</div>
+        <div class="item" id="box10">Item- 10</div>
+        <div class="item" id="box11">Item- 11</div>
+        <div class="item" id="box12">Item- 12</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4 , 1fr);
+            gap: 10px;
+            grid-template-rows: 100px 50px repeat(3 , 1fr);
+        }
+
+      .item {
+        border: 1px solid yellowgreen;
+        padding: 10px;
+      }
+
+      #box1 {
+        grid-row: span 5;
+      }
+      #box2 ,#box3 {
+        grid-column: span 3;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="box1">Item - 100</div>
+        <div class="item" id="box2">Item - 200</div>
+        <div class="item" id="box3">Item - 300</div>
+        <div class="item" id="box4">Item - 400</div>
+        <div class="item" id="box5">Item - 500</div>
+        <div class="item" id="box6">Item - 600</div>
+        <div class="item" id="box7">Item - 700</div>
+        <div class="item" id="box8">Item - 800</div>
+        <div class="item" id="box9">Item - 900</div>
+        <div class="item" id="box10">Item - 1000</div>
+        <div class="item" id="box11">Item - 1100</div>
+        <div class="item" id="box12">Item - 1200</div>
+        <div class="item" id="box13">Item - 1000</div>
+        <div class="item" id="box14">Item - 1100</div>
+        <div class="item" id="box15">Item - 1200</div>
+        <div class="item" id="box15">Item - 1200</div>
+        
+        
+
+    </div>
+</body>
+</html>
