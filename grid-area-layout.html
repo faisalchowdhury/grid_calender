@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .header , .nav , .main,.aside,.footer {
+            padding: 10px;
+            border: 2px solid brown;
+            border-radius: 10px ;
+        }
+        .header {
+            grid-area: header;
+        }
+        .nav {
+             grid-area: nav;
+        }
+        .main {
+            grid-area: main;
+        }
+        .aside {
+            grid-area: aside;
+        }
+        .footer {
+            grid-area: footer;
+        }
+
+        .body {
+            display: grid;
+            grid-template-areas: 
+            "header header header header"
+            "nav main  main aside"
+            "footer footer footer footer"
+            ;
+            gap: 10px;
+        }
+
+        @media screen and (max-width: 576px){
+            .body {
+                grid-template-areas: 
+                "header header"
+                "nav nav"
+                "main main"
+                "aside aside"
+                "footer footer"
+                ;
+            }
+        }
+
+
+        @media screen and (min-width: 577px) and (max-width: 992px){
+            .body {
+                grid-template-areas: 
+                "header header header"
+                "nav nav nav "
+                "aside main main"
+                "footer footer footer"
+                ;
+            }
+        }
+    </style>
+</head>
+<body class="body">
+    
+
+    <header class="header">
+       <h2>The Lorem Ipsum Header</h2>
+    </header>
+ 
+    <nav class="nav">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+    </nav>
+
+    <main class="main">
+        <div>
+            <h3>Content 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error asperiores, unde eos nam cupiditate deleniti voluptatem quod neque suscipit id illum. Consequuntur quaerat perferendis voluptatem id aspernatur, non modi necessitatibus, aliquid perspiciatis harum obcaecati earum sit asperiores odit, consequatur voluptates!</p>
+
+            <h3>Content 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error asperiores, unde eos nam cupiditate deleniti voluptatem quod neque suscipit id illum. Consequuntur quaerat perferendis voluptatem id aspernatur, non modi necessitatibus, aliquid perspiciatis harum obcaecati earum sit asperiores odit, consequatur voluptates!</p>
+        </div>
+    </main>
+
+    <aside class="aside">
+        <h4>Ad Area</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, quisquam.</p>
+    </aside>
+
+    <footer class="footer"><h6>Copyright 2025</h6></footer>
+
+</body>
+</html>
