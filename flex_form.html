@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* * {
+            margin: 0;
+            padding: 0;
+        } */
+        nav ul li {
+            list-style: none;
+            padding: 0 10px ;
+        }
+        nav ul li a  {
+            text-decoration: none;
+        }
+        
+        nav .menu{
+            display: flex;
+        }
+
+        
+        nav ul {
+            display: flex;
+            justify-content: space-between;
+            
+        }
+
+        form {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+            height: 40%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .former_abba {
+            border: 1px solid tomato;
+            height: 100vmin;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <div class="menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </div>
+
+                <li><a href="">LOGIN</a></li>
+            </ul>
+        </nav>
+
+
+
+        <div class="former_abba">
+            <form action="">
+                <h2>Please submit the form</h2>
+                <input type="text" placeholder="Name">
+                <input type="Email" placeholder="Email">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </header>
+</body>
+</html>
