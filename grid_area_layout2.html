@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore new layout with grid area</title>
+
+    <style>
+        .header,.nav,.content,.aside,.card1,.card2,.card3,.card4,.footer {
+            border:3px solid rgb(0, 0, 0);
+            background: rgb(255, 47, 158);
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .header {
+            grid-area: header;
+        }
+        .nav {
+            grid-area: nav;
+        }
+        .content {
+            grid-area: content;
+        }
+        .aside {
+            grid-area: aside;
+        }
+        .card1 {
+            grid-area: card1;
+        }
+        .card2 {
+            grid-area: card2;
+        }
+        .card3 {
+            grid-area: card3;
+        }
+        .card4 {
+            grid-area: card4;
+        }
+        .footer {
+            grid-area: footer;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-areas: 
+            
+            "header header header nav"
+            "aside content content content"
+            "card1 card2 card3 card4"
+            "footer footer footer footer"
+             ;
+             gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="wrapper">
+        
+        <header class="header">
+            <h2>Header area is here</h2>
+        </header>
+        <nav class="nav">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </nav>
+
+        <section class="content">
+            <div>
+                <h3>Content 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint autem cum consequatur libero inventore aspernatur harum tenetur, aperiam odio ducimus quia numquam eius velit voluptatibus aliquid vero dolores laborum blanditiis!</p>
+                <hr>
+                <h3>Content 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint autem cum consequatur libero inventore aspernatur harum tenetur, aperiam odio ducimus quia numquam eius velit voluptatibus aliquid vero dolores laborum blanditiis!</p>
+            </div>
+        </section>
+
+        <aside class="aside">
+            <div>
+                <h3>Google Add</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, laborum!
+            </div>
+        </aside>
+
+        <div class="card1">
+            <h4>Card 01</h4>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus adipisci tempora voluptate deserunt unde commodi iure quisquam recusandae iste, perspiciatis fugit ipsum quam nisi sed tempore dolore perferendis blanditiis magnam.
+        </div>
+        <div class="card2">
+            <h4>Card 02</h4>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus adipisci tempora voluptate deserunt unde commodi iure quisquam recusandae iste, perspiciatis fugit ipsum quam nisi sed tempore dolore perferendis blanditiis magnam.
+        </div>
+        <div class="card3">
+            <h4>Card 03</h4>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus adipisci tempora voluptate deserunt unde commodi iure quisquam recusandae iste, perspiciatis fugit ipsum quam nisi sed tempore dolore perferendis blanditiis magnam.
+        </div>
+        <div class="card4">
+            <h4>Card 04</h4>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus adipisci tempora voluptate deserunt unde commodi iure quisquam recusandae iste, perspiciatis fugit ipsum quam nisi sed tempore dolore perferendis blanditiis magnam.
+        </div>
+
+
+        <footer class="footer">
+            <h5>Copyright 2025 all rights reserved </h5>
+        </footer>
+
+    </div>
+
+</body>
+</html>
